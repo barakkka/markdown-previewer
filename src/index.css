@@ -1,0 +1,89 @@
+:root {
+  --foreground: rgb(71, 150, 150);
+  --background: rgb(135, 181, 181);
+  --textBackground: rgb(192, 216, 216);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  background-color: var(--background);
+}
+
+.top {
+  height: 2.5rem;
+  background-color: var(--foreground);
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.topOne p {
+  margin: 10px 0 0 10px;
+  font-weight: bolder;
+  font-size: large;
+}
+#editorContainer {
+  width: 37rem;
+  height: 14rem;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgb(73, 73, 73);
+  margin: 1.3rem auto;
+  overflow: hidden;
+}
+#editor {
+  background-color: var(--textBackground);
+  height: 11.75rem;
+  width: 99%;
+}
+#buttonTwo,
+#buttonOne {
+  font-size: large;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 10px 10px 0 0;
+}
+
+#previewerContainer {
+  width: 50rem;
+  height: fit-content;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  margin: auto;
+}
+#preview {
+  min-height: 10rem;
+  padding: 1rem;
+  width: 48rem;
+  border-top: 1px solid black;
+  background-color: var(--textBackground);
+}
+img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+code {
+  background-color: white;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  #editorContainer {
+    margin: 0.5rem auto;
+  }
+}
+
+
+#developerDiv {
+  text-align: center;
+  margin-top: 15px;
+}
+#designedBy {
+  color: black;
+}
+#developer {
+  color: white;
+}
+
+
+/* ------------CSS LOOKING CLEAN------------- */
